@@ -19,7 +19,7 @@ $(document).on('keydown', function(){
 		}
 
 		if (count == nodeList.length){
-			window.parent.postMessage(button, '*')
+			top.postMessage(button, '*')
 		}
 	}
 

@@ -26,19 +26,19 @@
 		<form target="_parent">
   			<div class="form-group">
     			<label for="partecipante1">Partecipante 1</label>
-   				<input type="text" class="form-control" id="partecipante1" placeholder="nome">
+   				<input type="text" class="form-control" id="partecipante1" placeholder="nome" data-toggle="popover" data-placement="bottom" data-content="inserire nome">
  			</div>
  			<div class="form-group">
     			<label for="partecipante2">Partecipante 2</label>
-   				<input type="text" class="form-control" id="partecipante2" placeholder="nome">
+   				<input type="text" class="form-control" id="partecipante2" placeholder="nome" data-toggle="popover" data-placement="bottom" data-content="inserire nome">
  			</div>
  			<div class="form-group">
     			<label for="partecipante3">Partecipante 3</label>
-   				<input type="text" class="form-control" id="partecipante3" placeholder="nome">
+   				<input type="text" class="form-control" id="partecipante3" placeholder="nome" data-toggle="popover" data-placement="bottom" data-content="inserire nome">
  			</div>
  			<div class="form-group">
     			<label for="partecipante4">Partecipante 4</label>
-   				<input type="text" class="form-control" id="partecipante4" placeholder="nome">
+   				<input type="text" class="form-control" id="partecipante4" placeholder="nome" data-toggle="popover" data-placement="bottom" data-content="inserire nome">
  			</div>
 		</form>
 	</div>
@@ -52,10 +52,15 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<!-- Javascript -->
+		<script type="text/javascript" src="forms.js"></script>
+
 		<script type="text/javascript">
 			/*let elem = window.parent.document.getElementsByClassName("klynt-button")[0]; 
 			console.log(elem);*/
-			
+
+			//window.parent.postMessage(/*any variable or object here*/, '*');
+
+
 		</script>
 </body>
 </html>

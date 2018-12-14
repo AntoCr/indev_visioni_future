@@ -3,7 +3,7 @@ console.log(elem);*/
 
 let button = "klynt-button";
 
-top.postMessage("editMode");
+top.postMessage("editMode", '*');
 
 
 $(document).on('keydown', function(){

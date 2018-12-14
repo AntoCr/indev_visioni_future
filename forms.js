@@ -7,6 +7,7 @@ $(document).on('keydown', function(){
 
 	if(event.key == 'Enter'){
 		let nodeList = document.getElementsByTagName('input');
+		let names = [];
 		let count = 0;
 		for (let elem of nodeList){
 			if (elem.value == ""){
@@ -14,12 +15,13 @@ $(document).on('keydown', function(){
 			}
 			else{
 				$(elem).popover('destroy');
-				count++;
+				names[count++] = elem.value;
 			}
 		}
 
 		if (count == nodeList.length){
-			top.postMessage(button, '*')
+			top.postMessage({'elem':button,
+			'names':names}, '*')
 		}
 	}
 
